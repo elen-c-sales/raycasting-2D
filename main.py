@@ -159,8 +159,9 @@ def check_collision(pos, obstacles):
     return False
 
 async def main():
-    print("Initializing Pygame...")
+    print("Entered async def main()")
     pygame.init()
+    print("pygame.init() passed")
     pygame.font.init()
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("Raycasting - Survival Horror")
@@ -260,10 +261,16 @@ async def main():
         pygame.display.flip()
         clock.tick(60)
         
-        # CRITICAL: yield control to browser
+
+    # CRITICAL: yield control to browser
         await asyncio.sleep(0)
 
     pygame.quit()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    import traceback
+    try:
+        print("Starting asyncio.run(main())...")
+        asyncio.run(main())
+    except Exception:
+        traceback.print_exc()
