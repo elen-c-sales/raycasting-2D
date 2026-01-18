@@ -2,6 +2,12 @@
 
 Implementação técnica de **raycasting 2D** aplicado à iluminação dinâmica, desenvolvido com **Python** e **Pygame** para fins de estudo e exploração do conceito.
 
+
+
+https://github.com/user-attachments/assets/6931c73e-0108-4024-9dde-12e4727fd515
+
+
+
 ## Características Técnicas
 
 - **Raycasting em tempo real** com 180 raios e 65° de campo de visão
