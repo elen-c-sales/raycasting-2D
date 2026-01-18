@@ -1,6 +1,6 @@
 # /// script
 # dependencies = [
-#   "pygame-ce",
+#   "pygame",
 # ]
 # ///
 
