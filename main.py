@@ -159,12 +159,16 @@ def check_collision(pos, obstacles):
     return False
 
 async def main():
+    print("Initializing Pygame...")
     pygame.init()
     pygame.font.init()
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("Raycasting - Survival Horror")
     clock = pygame.time.Clock()
-    font = pygame.font.SysFont('Arial', 18, bold=True)
+    
+    # Use default font for better web compatibility
+    font = pygame.font.Font(None, 24)
+    print("Game initialized successfully!")
     
     player_pos = pygame.Vector2(500, 680)
     last_mouse_pos = pygame.Vector2(pygame.mouse.get_pos())
