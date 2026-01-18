@@ -25,7 +25,6 @@ wheels/
 
 # Pygbag build artifacts
 
-*.apk
 *.zip
 
 # IDE
